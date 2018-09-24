@@ -41,4 +41,16 @@ public:
 	int Speek();
 };
 
+class Centaur : public Animal 
+{
+private:
+	int Length;
+public:
+	Centaur(Sex s, int year) : Animal(s,year), Length(6) { } // defualt length is 6(feet)
+	Centaur(Sex s, int  year, int l) : Animal(s, year), Length(l) {}
+
+
+};
+
+
 #endif
